@@ -10,7 +10,7 @@ import '../CSS/input.css'
 
 export default function Input({ placeholder, textInput, setTextInput, setSearchText }) {
   const inputTextSetup = (event) => {
-    const str = event.target.value.replace(/[^a-zA-Z]/gi, '')
+    const str = event.target.value.replace(/[^a-zA-Z\s+]/gi, '')
     event.target.value = str;
     setTextInput(str);
     console.log(str);
