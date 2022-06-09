@@ -1,0 +1,53 @@
+.container {
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+  height: 350px;
+  width: 30%;
+  background-color: #00203FFF;
+  border-radius: 10px;
+  color: #ADEFD1FF;
+}
+
+.container-start {
+  display: none;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.temperature {
+
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  border: solid 2px #ADEFD1FF;
+  margin-top: 40px;
+}
+
+.weather {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 30px;
+  color: white;
+
+}
+
+.date {
+  font-size: 20px;
+  padding: 0;
+  color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

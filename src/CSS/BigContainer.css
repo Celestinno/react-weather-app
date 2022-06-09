@@ -1,0 +1,12 @@
+.bigContainer {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 400px;
+  width: 100%;
+  background-color: #ADEFD1FF;
+  color: #00203FFF;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
