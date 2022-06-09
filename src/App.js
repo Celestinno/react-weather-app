@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import axios from 'axios'
 const title = 'Weather App'
 const placeholder = 'Insert City Name...'
-const days = 3;
+
 
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
   const [date, setDate] = useState([])
   const [rain, setRain] = useState([])
   const [icon, setIcon] = useState([])
+  const [days, setDays] = useState(3)
   useEffect(() => {
     const options = {
       method: 'GET',
@@ -52,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <Title title={title} />
-      <Body days={days} rain={rain} temperature={temperature} date={date} icon={icon} placeholder={placeholder} setTextInput={setTextInput} setSearchText={setSearchText} textInput={textInput} />
+      <Body days={days} setDays={setDays} rain={rain} temperature={temperature} date={date} icon={icon} placeholder={placeholder} setTextInput={setTextInput} setSearchText={setSearchText} textInput={textInput} />
     </div>
   );
 }
